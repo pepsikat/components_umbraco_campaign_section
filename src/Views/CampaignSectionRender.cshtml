@@ -1,0 +1,15 @@
+@using Skybrud.Umbraco.GridData.Rendering
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<GridControlWrapper<Graph.Components.CampaignSection.GridControlCampaignSectionValue>>
+@{
+	var item = Model.Value.GridControlCampaignSectionItem;
+}
+
+<div>
+	@item.Title
+	@Html.Raw(item.Summary)
+	<img src="@item.Image" />
+	@if (item.Link != null)
+	{
+		<a href="@(item.Link.Url + (string.IsNullOrEmpty(item.Link.Hashtarget) == false ? $"#{item.Link.Hashtarget}" : string.Empty))" target="@item.Link.Target">@item.Link.Name</a>
+	}
+</div>

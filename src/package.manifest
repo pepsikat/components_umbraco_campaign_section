@@ -1,0 +1,14 @@
+{
+	"gridEditors": [
+		{
+			"name": "Campaign Section Data",
+			"alias": "campaignSection",
+			"view": "/App_Plugins/CampaignSection/CampaignSectionView.html",
+			"render": "/App_Plugins/CampaignSection/Views/CampaignSectionRender.cshtml",
+			"icon": "icon-map-location"
+		}
+	],
+	"javascript": [
+		"/App_Plugins/CampaignSection/CampaignSection.Controller.js"
+	]
+}
