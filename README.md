@@ -1,5 +1,8 @@
 # Graph Umbraco Components - Campaign Section
 
+## Description
+The bright section with colorful background and bold heading/summary. Contains a link to a promotioned page or document.
+
 ## Installation steps:
 1. Install Nuget packages:
 * `Install-Package UmbracoGridConfigLoader`
